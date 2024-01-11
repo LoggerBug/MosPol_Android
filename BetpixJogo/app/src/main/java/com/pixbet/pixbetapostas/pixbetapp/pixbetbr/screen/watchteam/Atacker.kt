@@ -5,18 +5,29 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.pixbet.pixbetapostas.pixbetapp.pixbetbr.R
-import com.pixbet.pixbetapostas.pixbetapp.pixbetbr.databinding.FragmentWatchTeamMainBinding
+import com.pixbet.pixbetapostas.pixbetapp.pixbetbr.databinding.FragmentAtackerBinding
 
 
 class Atacker : Fragment() {
-    lateinit var binding : FragmentWatchTeamMainBinding
+    lateinit var binding : FragmentAtackerBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        binding = FragmentWatchTeamMainBinding.inflate(layoutInflater, container, false)
-        return inflater.inflate(R.layout.fragment_watch_team_atac, container, false)
+    ): View {
+        binding = FragmentAtackerBinding.inflate(layoutInflater, container, false)
+        return binding.root
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.back.setOnClickListener {
+            findNavController().navigateUp()
+        }
+
+    }
+
 }

@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".screen.watchteam.Atacker">
-
-    <ImageView
-        android:id="@+id/back2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
-        android:src="@drawable/back" />
 
     <ImageView
         android:layout_width="match_parent"
@@ -38,7 +28,7 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ATACANTES"
+        android:text="LATERAIS"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/logo"
         android:textColor="@color/black"
@@ -113,7 +103,7 @@
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/atacantes1"/>
+                android:src="@drawable/atacantes2"/>
 
             <ImageView
                 android:layout_width="150dp"
@@ -125,9 +115,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="gustavo silva"
+                android:text="GUSTAVO SILVA"
                 android:layout_gravity="center"
                 android:layout_marginTop="-45dp"
+                android:layout_marginStart="5dp"
                 android:textColor="@color/black"
                 android:textSize="17sp"/>
 
@@ -135,7 +126,7 @@
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/atacantes3"
+                android:src="@drawable/atacantes4"
                 android:layout_marginTop="30dp"/>
 
             <ImageView
@@ -149,6 +140,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="GIOVANE"
+                android:layout_marginStart="5dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="-45dp"
                 android:textColor="@color/black"
@@ -159,7 +151,6 @@
 
     </LinearLayout>
 
-
     <ImageView
         android:id="@+id/back"
         android:layout_width="wrap_content"
@@ -168,6 +159,5 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"/>
-
 
 </RelativeLayout>

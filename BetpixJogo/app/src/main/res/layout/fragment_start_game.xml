@@ -32,14 +32,14 @@
 
 
         <ImageView
-            android:id="@+id/legue"
+            android:id="@+id/watchTeam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/watch"
             android:layout_gravity="center"/>
 
         <ImageView
-            android:id="@+id/contact"
+            android:id="@+id/history"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/history"

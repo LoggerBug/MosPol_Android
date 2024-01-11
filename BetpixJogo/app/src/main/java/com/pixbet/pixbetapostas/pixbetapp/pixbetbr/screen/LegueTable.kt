@@ -28,12 +28,10 @@ class LegueTable : Fragment() {
 
         binding.back.setOnClickListener {
             controller.navigateUp()
-            controller.popBackStack()
         }
 
         binding.menu.setOnClickListener {
-            controller.navigate(R.id.mainFragment)
-            controller.popBackStack()
+            controller.navigateUp()
         }
 
     }

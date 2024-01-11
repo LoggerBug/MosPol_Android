@@ -43,6 +43,7 @@
         android:background="@drawable/reb_bg"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
+        android:textColor="@color/white"
         android:gravity="center"
         android:textSize="10sp"/>
 

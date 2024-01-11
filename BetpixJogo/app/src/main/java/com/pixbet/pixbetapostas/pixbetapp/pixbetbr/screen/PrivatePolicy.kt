@@ -28,7 +28,6 @@ class PrivatePolicy : Fragment() {
 
         binding.back.setOnClickListener {
             controller.navigateUp()
-            controller.popBackStack()
         }
 
         binding.menu.setOnClickListener {

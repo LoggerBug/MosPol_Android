@@ -31,18 +31,21 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="200dp"
+            android:id="@+id/atacantess"
+            android:layout_width="250dp"
             android:layout_height="70dp"
             android:src="@drawable/atacantes"/>
 
         <ImageView
-            android:layout_width="200dp"
+            android:id="@+id/goleiros"
+            android:layout_width="250dp"
             android:layout_height="70dp"
             android:layout_marginTop="5dp"
             android:src="@drawable/goleiros"/>
 
         <ImageView
-            android:layout_width="200dp"
+            android:id="@+id/laterais"
+            android:layout_width="250dp"
             android:layout_height="70dp"
             android:layout_marginTop="5dp"
             android:src="@drawable/laterais"/>

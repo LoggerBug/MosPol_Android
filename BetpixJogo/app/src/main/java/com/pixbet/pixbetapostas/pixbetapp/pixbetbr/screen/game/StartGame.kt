@@ -27,7 +27,14 @@ class StartGame : Fragment() {
         val controller = findNavController()
         binding.back.setOnClickListener {
             controller.navigateUp()
-            controller.popBackStack()
+        }
+
+        binding.watchTeam.setOnClickListener {
+            controller.navigate(R.id.watchTeamMain)
+        }
+
+        binding.history.setOnClickListener {
+            controller.navigate(R.id.firstHistory)
         }
 
     }

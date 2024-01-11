@@ -56,11 +56,6 @@
         android:label="fragment_watch_team_main"
         tools:layout="@layout/fragment_watch_team_main" />
     <fragment
-        android:id="@+id/watchTeamAtac"
-        android:name="com.pixbet.pixbetapostas.pixbetapp.pixbetbr.screen.watchteam.Atacker"
-        android:label="fragment_watch_team_atac"
-        tools:layout="@layout/fragment_watch_team_atac" />
-    <fragment
         android:id="@+id/gelerios"
         android:name="com.pixbet.pixbetapostas.pixbetapp.pixbetbr.screen.watchteam.Gelerios"
         android:label="fragment_gelerios"
@@ -70,4 +65,9 @@
         android:name="com.pixbet.pixbetapostas.pixbetapp.pixbetbr.screen.watchteam.Laterais"
         android:label="fragment_laterais"
         tools:layout="@layout/fragment_laterais" />
+    <fragment
+        android:id="@+id/atacker"
+        android:name="com.pixbet.pixbetapostas.pixbetapp.pixbetbr.screen.watchteam.Atacker"
+        android:label="fragment_atacker"
+        tools:layout="@layout/fragment_atacker" />
 </navigation>

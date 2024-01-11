@@ -41,6 +41,7 @@
         android:layout_below="@id/title"
         android:layout_above="@+id/back"
         android:background="@drawable/reb_bg"
+        android:textColor="@color/white"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:gravity="center"
@@ -53,16 +54,6 @@
         android:src="@drawable/back"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="20dp"
-        android:layout_marginBottom="10dp"/>
-
-    <ImageView
-        android:id="@+id/next"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:src="@drawable/next"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="20dp"
         android:layout_marginBottom="10dp"/>
 
 </RelativeLayout>
