@@ -7,12 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.pixbet.pixbetapostas.pixbetapp.pixbetbr.R
+import com.pixbet.pixbetapostas.pixbetapp.pixbetbr.SoundManager
 import com.pixbet.pixbetapostas.pixbetapp.pixbetbr.databinding.FragmentLegueTableBinding
 
 
 class LegueTable : Fragment() {
     lateinit var binding: FragmentLegueTableBinding
 
+    private lateinit var soundManager: SoundManager
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -23,6 +25,8 @@ class LegueTable : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        soundManager = SoundManager.getInstance(requireContext())
 
         val controller = findNavController()
 

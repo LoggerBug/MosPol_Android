@@ -7,11 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.pixbet.pixbetapostas.pixbetapp.pixbetbr.R
+import com.pixbet.pixbetapostas.pixbetapp.pixbetbr.SoundManager
 import com.pixbet.pixbetapostas.pixbetapp.pixbetbr.databinding.FragmentWatchTeamMainBinding
 
 
 class WatchTeamMain : Fragment() {
     lateinit var binding : FragmentWatchTeamMainBinding
+    private lateinit var soundManager: SoundManager
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -23,6 +25,8 @@ class WatchTeamMain : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        soundManager = SoundManager.getInstance(requireContext())
 
         binding.atacantess.setOnClickListener {
             findNavController().navigate(R.id.atacker)
